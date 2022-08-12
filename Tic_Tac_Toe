@@ -27,12 +27,6 @@ def display_board(game_list):
     print('   |   |   ')
     print(f' {game_list[0]} | {game_list[1]} | {game_list[2]} ')
     print('   |   |   ')
-     
-
-
-display_board(mylist)
-if input('Clear Screen?')=='Y':
-    clear_output()
 
 
 
@@ -70,7 +64,6 @@ def update_list(game_list,index, player):
 
 
 
-update_list(mylist, 1, 2)
 
 
 

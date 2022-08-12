@@ -34,13 +34,9 @@
 # 
 # ## HAVE FUN!
 
-# In[1]:
 
 
 from IPython.display import clear_output
-
-
-# In[2]:
 
 
 def display_board(game_list):
@@ -57,17 +53,6 @@ def display_board(game_list):
     print(f' {game_list[0]} | {game_list[1]} | {game_list[2]} ')
     print('   |   |   ')
      
-        
-
-
-# In[3]:
-
-
-mylist=['O','X','X','O',' ',' ','O',' ','X']
-mylist.count('O')
-
-
-# In[4]:
 
 
 display_board(mylist)
@@ -75,7 +60,6 @@ if input('Clear Screen?')=='Y':
     clear_output()
 
 
-# In[5]:
 
 
 def check_winner(game_list):
@@ -101,14 +85,6 @@ def check_winner(game_list):
     return False
 
 
-# In[6]:
-
-
-check_winner(mylist)
-
-
-# In[7]:
-
 
 def update_list(game_list,index, player):
     if player==1:
@@ -118,13 +94,9 @@ def update_list(game_list,index, player):
     return game_list
 
 
-# In[8]:
-
 
 update_list(mylist, 1, 2)
 
-
-# In[9]:
 
 
 def user_choice(game_list,player):
@@ -146,13 +118,6 @@ def user_choice(game_list,player):
     return int(choice)-1
 
 
-# In[10]:
-
-
-user_choice(2)
-
-
-# In[11]:
 
 
 def new_game():
@@ -168,14 +133,6 @@ def new_game():
     
     return choice=='Y'
 
-
-# In[12]:
-
-
-new_game()
-
-
-# In[13]:
 
 
 play_game= True 
@@ -220,14 +177,6 @@ while play_game:
     game_list=update_list(game_list,index,2)
     
 
-
-# In[ ]:
-
-
-game_list
-
-
-# In[ ]:
 
 
 
